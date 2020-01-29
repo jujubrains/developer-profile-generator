@@ -6,14 +6,18 @@ body {
   height: 300px;
   width: auto;
   text-align: center;
+  margin: 10px;
 }
 
 .back-color-center {
-  height: 200px;
+  height: fit-content;
+  text-align: center;
 }
 
 .back-color-bottom {
   height: 300px;
+  width: auto;
+  margin: 1px;
 }
 
 .name {
@@ -25,7 +29,16 @@ body {
 
 #user-img {
   height: 50px;
-  border-radius: 90px;
+  border-radius: 120px;
   border-width: 10px;
   border-color: gold;
+}
+
+.info-box {
+  background-color: coral;
+  border-radius: 8px;
+  text-align: center;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 15px;
 }
