@@ -1,0 +1,31 @@
+body {
+  text-align: center;
+}
+
+.back-color-top {
+  height: 300px;
+  width: auto;
+  text-align: center;
+}
+
+.back-color-center {
+  height: 200px;
+}
+
+.back-color-bottom {
+  height: 300px;
+}
+
+.name {
+  margin: auto;
+  margin-top: 50px;
+  height: auto;
+  text-align: center;
+}
+
+#user-img {
+  height: 50px;
+  border-radius: 90px;
+  border-width: 10px;
+  border-color: gold;
+}
