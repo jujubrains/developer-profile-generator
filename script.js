@@ -16,6 +16,17 @@ inquirer
     .get(queryUrl)
     .then(function(res){
       console.log(res.data);
+      const name = res.data.name;
+      const company = res.data.company;
+      const blog = res.data.blog;
+      const location = res.data.blog;
+      const bio = res.data.bio;
+      const repos = res.data.public_repos;
+      const followers= res.data.followers;
+      const following = res.data.following;
+      const url = res.data.
+      console.log(name);
+      
   //       queryURL= `https://api.github.com/users/${username}`;
   //     $.ajax({
   //       url: queryURL,
