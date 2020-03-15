@@ -1,44 +1,86 @@
 body {
+  -webkit-print-color-adjust:exact !important;
+
+}
+#main {
+  position: absolute; 
+  bottom: 200px;
+  height: 1400px;
+  width: 1200px;
+
+}
+.profile-img {
+  border-radius: 50%;
+  position: absolute;
+  bottom: 70%;
+  max-width: 220px;
+  margin: 0 auto;
+  left:17%;
+
+}
+h2 {
+  padding-top: 130px;
+}
+.top-container {
+  margin: 150px auto;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: row ;
+  justify-content: center;
+  align-items: center;
+
+}
+.card {
+  width: 300px; 
+ 
+}
+.card-text {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1.5em; 
+}
+.badge {
+  padding: 3% 6%;
+  font-size: larger;
+  font-weight: normal;
+  display: inline; 
   text-align: center;
 }
+.bottom-container {
+  padding-top: 30px;
+  padding-bottom: 30px; 
+  display: flex; 
+  justify-content: space-around;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
 
-.back-color-top {
-  height: 300px;
-  width: auto;
+}
+.column {
+  display: flex; 
+  justify-content: center;
+  flex-direction: column;
+}
+.flex-item {
+  width: 250px;
+  padding: 10px 20px;
+  height: 150px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  line-height: 150px;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-size: 1em;
   text-align: center;
-  margin: 10px;
-}
+  margin-bottom: 20px;
+  border-radius: 25%;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
 
-.back-color-center {
-  height: fit-content;
-  text-align: center;
 }
-
-.back-color-bottom {
-  height: 300px;
-  width: auto;
-  margin: 1px;
-}
-
-.name {
-  margin: auto;
-  margin-top: 50px;
-  height: auto;
-  text-align: center;
-}
-
-#user-img {
-  height: 50px;
-  border-radius: 120px;
-  border-width: 10px;
-  border-color: gold;
-}
-
-.info-box {
-  background-color: coral;
-  border-radius: 8px;
-  text-align: center;
-  color: white;
-  font-family: 'Courier New', Courier, monospace;
-  margin: 15px;
+.badge {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 2em; 
+  font-weight: bolder;
+  overflow: hidden;
 }

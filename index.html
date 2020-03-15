@@ -1,72 +1,44 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Developer Profile Generator</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-12 back-color-top" style="background-color: cornflowerblue;">
-        <div class="row">
-          <div class="col-11 name info-box" style="background-color: coral;">
-            <div class="row">
-              <img id="user-img" src="" alt="user">
-            </div>
-            <div class="row">
-              <h1>Hi!</h1>
-            </div>
-            <div class="row">
-              <h1>My name is </h1>
-            </div>
-            <div class="row">
-              <h3>Currently @ </h3>
-            </div>
-            <div class="row">
-              <div class="col-2">☛ </div>
-              <div class="col-2">⌘ GitHub</div>
-              <div class="col-2">✑ Blog</div>
-            </div>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Profile Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="" id="main">
+      <div class="top-container">
+        <div class="card" style="width: 23rem;">
+          <img src="${data.avatar_url}" class="profile-img card-img-top" alt="profile-pic">
+          <div class="card-body">
+            <h2 class="card-title use">${data.login}</h2>
+            <p class="card-text"><a class="location" href="">${data.location}</a></p>
+            <p class="card-text"><a class='profile: ' href=""></a>Profile: ${data.html_url}</p>
+            <p class="card-text"><a class='bio:' href=""></a>${data.bio}</p>
           </div>
         </div>
+      </div>   
+      <div class="bottom-container">
+        <div class="column">
+          <div class="flex-item">
+            <p class="badge followers">Repos: ${data.public_repos}</p>
+          </div>
+          <div class="flex-item">
+            <p class="badge following">Stars:${starsCounter} </p>
+          </div>
+        </div>
+        <div class="column">
+          <div class="flex-item">
+            <p class="badge repos">Following: ${data.following}</p>
+          </div>
+          <div class="flex-item">
+            <p class="badge blog">Followers: ${data.followers}</p>
+          </div>
+        </div> 
       </div>
     </div>
-    <div class="row back-color-center">
-      <div class="col-10">
-        <div class="row">
-          <h2 id="bio">bio</h2>
-        </div>
-        <div class="row">
-          <div class="col-5 info-box">
-            <h2>Public Repositories</h2>
-            <h2>0</h2>
-          </div>
-          <div class="col-5 info-box">
-            <h2>Followers</h2>
-            <h2>0</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-5 info-box">
-            <h2>GitHub Stars</h2>
-            <h2>0</h2>
-          </div>
-          <div class="col-5 info-box">
-            <h2>Following</h2>
-            <h2>0</h2>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="row back-color-bottom" style="background-color: cornflowerblue;">
-    </div>
-  </div>
+  </body>
+  <html lang="en">
 
-<script src="script.js"></script>
-</body>
-</html>
